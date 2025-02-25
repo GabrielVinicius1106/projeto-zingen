@@ -12,11 +12,16 @@
   <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-  <header>
-    <div class="container even-columns">
-      <h2>Lado A</h2>
-      <h2>Lado B</h2>
-    </div>
-  </header>
+  <div class="flex gap-1">
+    <a href="#" class="btn btn-small">Label</a>
+    <span href="#" class="btn btn-medium">Label</span>
+    <button href="#" class="btn btn-large">Label</button>
+  </div>
+
+  <div class="flex gap-1">
+    <button class="btn btn-small" aria-label="Label"></button>
+    <button class="btn btn-medium" aria-label="Label"></button>
+    <a href="#" class="btn btn-large" aria-label="Label"></a>
+  </div>
 </body>
 </html>
