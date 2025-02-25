@@ -1,0 +1,49 @@
+.py-base {
+  padding-block: var(--paddingy-base);
+}
+
+.py-lg {
+  padding-block: var(--paddingy-lg);
+}
+
+.py-xl {
+  padding-block: var(--paddingy-xl);
+}
+
+.px-lg {
+  padding-inline: var(--paddingx-lg);
+}
+
+.container {
+  --max-width: 375px;
+  width: min(var(--max-width), 100% - var(--paddingx-lg) * 2);
+
+  border: 1px solid pink;
+  margin-inline: auto;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (width >= 80em) {
+  /* Estamos trabalhando a responsividade com a técnica 'mobile-first', logo utilizamos @media queries para desktop! */
+
+  .container {
+    --max-width: 80rem;
+  }
+
+  .desktop-only {
+    display: initial;
+  }
+
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}

@@ -36,6 +36,11 @@
   --fs-h2: 1.5rem;
   --fs-h1: 2.5rem; 
 
+  --paddingx-lg: 1.5rem; 
+
+  --paddingy-base: 1rem;
+  --paddingy-lg: 1.5rem;
+  --paddingy-xl: 3rem;
 }
 
 html {
@@ -84,9 +89,17 @@ ul[role="list"] {
 }
 
 @media (width >= 80em) {
+  /* Estamos trabalhando a responsividade com a técnica 'mobile-first', logo utilizamos @media queries para desktop! */
+
   :root {
     --fs-h3: 2rem;
     --fs-h2: 3rem;
-    --fs-h1: 4rem; 
+    --fs-h1: 4rem;
+    
+    --paddingx-lg: 2rem;
+    
+    --paddingy-base: 1.5rem;
+    --paddingy-lg: 2.5rem;
+    --paddingy-xl: 5rem;
   }
 }
