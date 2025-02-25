@@ -42,4 +42,51 @@ html {
   font-family: var(--ff-sans);
   font-weight: var(--fw-base);
   font-size: var(--fs-base);
+  line-height: 1.6;
+  color: var(--text-color-primary);
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  color: var(--text-color-primary);
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.04em;
+}
+
+h1 {  
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+p {
+  font-size: var(--fs-base);
+  color: var(--text-color-secondary); 
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul[role="list"] {
+  list-style: none;
+}
+
+@media (width >= 80em) {
+  :root {
+    --fs-h3: 2rem;
+    --fs-h2: 3rem;
+    --fs-h1: 4rem; 
+  }
 }
