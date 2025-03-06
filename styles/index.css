@@ -6,3 +6,5 @@
 @import url(hero.css);
 @import url(sections.css);
 @import url(about.css);
+@import url(cards.css);
+@import url(features.css) (width >= 80rem); /* O documento é importado apenas se a condição de 'width >= 80rem' é satisfeita */
