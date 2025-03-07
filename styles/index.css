@@ -10,3 +10,4 @@
 @import url(features.css) (width >= 80rem); /* O documento é importado apenas se a condição de 'width >= 80rem' é satisfeita */
 @import url(pricing.css);
 @import url(download.css);
+@import url(footer.css);
